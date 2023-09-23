@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build hello world",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-g",
+          "main.cpp",
+          "-o",
+          "output_name",
+          "-IC:/c++Libs/SFML-2.6.0/include",
+          "-LC:/c++Libs/SFML-2.6.0/lib",
+          "-lsfml-graphics",
+          "-lsfml-window",
+          "-lsfml-system"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
+  
